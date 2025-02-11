@@ -29,7 +29,7 @@ function Page2() {
   const [messageApi, contextHolder] = message.useMessage();
 
   const handleEnter = () => {
-    if (password === '271023') navigate('/next/3');
+    if (password === '271023') navigate('/next/3/abc');
     else {
       messageApi.open({ type: 'error', content: 'The password is wrong' });
       setPassword('');

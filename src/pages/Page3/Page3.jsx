@@ -43,7 +43,7 @@ function Page3() {
 
   const navigate = useNavigate();
   const handleOnClick = () => {
-    navigate('/next/4');
+    navigate('/next/4/hjk');
   };
 
   return (
