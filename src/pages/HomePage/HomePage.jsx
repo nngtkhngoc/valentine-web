@@ -15,7 +15,6 @@ function HomePage() {
       className='w-screen h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat overflow-hidden flex flex-col gap-2'
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Hình ảnh xuất hiện từ từ */}
       <motion.img
         src={letter}
         alt='Letter'
@@ -35,13 +34,13 @@ function HomePage() {
       </motion.div>
 
       <motion.button
-        className='w-[576px] h-[82px] rounded-[30px] border-[5px] border-pinkest bg-lesspink font-pangolin text-[40px] text-pinkest hover:scale-[1.2] ease-in-out duration-300'
+        className='w-[576px] h-[82px] rounded-[30px] border-[5px] border-pinkest bg-lesspink font-pangolin text-[40px] text-pinkest hover:scale-[1.2] ease-in-out duration-500'
         onClick={handleOnClick}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        Click to open it
+        <span>Click to open it</span>
       </motion.button>
     </div>
   );
